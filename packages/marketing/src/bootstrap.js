@@ -14,6 +14,7 @@ const mount = (el, { onNavigate, defaultHistory, initialPath }) => {
   }
 
   ReactDOM.render(<App history={history} />, el);
+
   return {
     onParentNavigate({ pathname: nextPathname }) {
       const { pathname } = history.location;
